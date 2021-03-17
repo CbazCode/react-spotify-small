@@ -7,6 +7,8 @@ export default function Player({ accessToken, trackUri }) {
   useEffect(() => setPlay(true), [trackUri])
 
   if (!accessToken) return null
+
+  console.log(accessToken);
   return (
     <SpotifyPlayer
       token={accessToken}
